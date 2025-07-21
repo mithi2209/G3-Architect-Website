@@ -101,7 +101,7 @@ nav li >a {
 }
 .banner-description{
     color:#727272;
-    width: 800px;
+    max-width: 800px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -288,6 +288,39 @@ nav li >a {
     font-size: 20px;
     font-weight: 600;
 }
+
+/* Our Sponsors Styles */
+.sponsors-section{
+    margin: 130px auto;
+}
+.sponsors-title{
+    text-align: center;
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+.sponsors-des{
+    color: #727272;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 400;
+    margin:24px auto 0 auto;
+    line-height: 26px; 
+}
+.sponsors-company{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+}
+.sponsors-company img{
+    filter: grayscale(100%);
+
+}
 /* Responsive Styles for small device */
 
 @media screen and (max-width:576px) {
@@ -308,7 +341,8 @@ nav li >a {
 
     .banner-title , 
     .nav-title ,
-    .architect-title{
+    .architect-title ,
+    .sponsors-title{
         font-size: 30px;
     }
 
@@ -327,6 +361,7 @@ nav li >a {
     }
 
     
+    /* architect  */
     .architects-section{
         flex-direction: column-reverse;
         margin: 50px 30px;
@@ -339,6 +374,7 @@ nav li >a {
         gap: 10px;
     }
     
+    /* feature styles */
     .features-container{
         gap: 10px;
         margin-left: 10px;
@@ -352,6 +388,8 @@ nav li >a {
         display: none;
     }
 
+    /* facts styles */
+
     .facts-section{
         margin: 30px auto;
     }
@@ -364,7 +402,7 @@ nav li >a {
         margin-left: 10px;
         width: 365px;
     }
-    .facts-card-container{
+    .facts-card-container {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 30px;
@@ -373,6 +411,23 @@ nav li >a {
 
     }
     
+    /* sponsors styles */
+    .sponsors-section{
+        margin-top: 20px;
+    }
+    .sponsors-des{
+        margin-top: 10px;
+        width: 365px;
+    }
+
+    .sponsors-company{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 30px;
+        gap: 50px;
+    }
     
   
 }
