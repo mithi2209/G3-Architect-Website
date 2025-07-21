@@ -118,7 +118,7 @@ nav li >a {
    
 }
 
-/* architects section styles */
+/* Architects Section Styles */
 
 .architects-section{
     display: flex;
@@ -135,8 +135,6 @@ nav li >a {
     gap: 24px;
         
 }
-
-
 
 .architect-title{
     max-width:468px;
@@ -161,12 +159,95 @@ nav li >a {
     margin-bottom: 30px;
 }
 
+/* Feature Section Styles */
+.features-container{
+    display: flex;
+    align-items: center;
+    gap: 140px;
+   
+}
 
+.feature-border{
+    display: flex;
+    
+}
+.left-border{
+    background: #FF900E;
+    width: 5px;
+    height: 106px;
+   
+}
+
+.feature-title{
+    color:  #131313;
+    max-width: 468px;;
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.feature-des{
+    color:  #727272;
+    max-width: 580px;;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+.card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.card-title{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-des{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    max-width: 600px;
+    margin-top: 10px;
+    
+
+}
+.feature-architect-img{
+    width: 100%;
+}
+.experience-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px 42px;
+    border: none;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.experience-year{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px; 
+}
+.experience-text{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
 /* Responsive Styles for small device */
 
 @media screen and (max-width:576px) {
     nav , 
-    .banner-container {
+    .banner-container ,
+    .features-container {
         flex-direction: column;
     }
 
@@ -181,9 +262,10 @@ nav li >a {
 
     .banner-title , 
     .nav-title ,
-    .architect-title {
+    .architect-title  {
         font-size: 30px;
     }
+
 
     nav li >a{
         font-size: 16px;
@@ -211,4 +293,20 @@ nav li >a {
         gap: 10px;
     }
     
+    .features-container{
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .feature-title{
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+    .experience-badge{
+        display: none;
+    }
+    .feature-img{
+       
+
+    }
 }
