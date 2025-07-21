@@ -337,6 +337,10 @@ footer p{
     font-weight: 400;
     padding: 38px 350px;
 }
+
+.hide{
+    display: none;
+}
 /* Responsive Styles for small device */
 
 @media screen and (max-width:576px) {
@@ -453,4 +457,118 @@ footer p{
         font-size: 1rem;
     }
   
+}
+
+
+
+/* Responsive For Medium Device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    /* header */
+    nav ,
+    .features-container{
+        flex-direction: column;
+    }
+
+    .nav-title{
+        margin-top: 30px;
+    }
+    
+    nav ul {
+        margin-top: 30px;
+    }
+    .banner-contents{
+        margin: 50px auto 0 auto;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner-description{
+        max-width: 600px;
+        
+    }
+    .banner-img{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* architect section */
+     .architects-section{
+        flex-direction: column-reverse;
+        margin: 30px 20px ;
+      
+        
+    }
+
+    .architects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .architect-title{
+        max-width: 800px;
+        
+    }
+    .architect-des{
+        max-width: 900px;
+        margin-bottom: 20px;
+    }
+
+    /* feature section */
+    .features-container{
+        gap: 20px;
+    }
+    .feature-des{
+        max-width: 700px;
+    }
+    .feature-architect-img{
+        width: 100%;
+    }
+    .experience-badge{
+        /* display: none; */
+        padding: 30px;
+        margin-left: 0px;
+        margin-top: - 5px;
+        
+    }
+
+    /* some facts section */
+    .facts-section{
+        margin: 80px 20px 0px 20px;
+    }
+
+    .facts-card-container {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .facts-card{
+        padding: 20px;
+    }
+    /* sponsors section */
+    .sponsors-section{
+        margin: 70px auto;
+    }
+
+    .sponsors-company{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        justify-items: center;
+        gap: 30px;
+       
+    }
+
+    /* footer */
+    footer{
+        margin: 100px 20px 70px 20px;
+    }
+    footer p{
+        padding: 20px 100px;
+        font-size: 1.2rem;
+    }
+
+
+
 }
